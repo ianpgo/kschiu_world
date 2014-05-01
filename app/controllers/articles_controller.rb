@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
     @articles = Article.alphabetical.paginate(:page => params[:page]).per_page(10)
   end
 
-
+#lol 
   def show
     @article = Article.find(params[:id])
   end
